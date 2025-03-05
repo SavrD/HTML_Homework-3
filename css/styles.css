@@ -34,13 +34,13 @@ address {
 
 .header-content {
   display: flex;
+  justify-content: space-between;
 }
 /* #endregion */
 
 /* #region LOGO */
 .logo {
   margin-right: 93px;
-
   font-family: "Raleway";
   font-size: 26px;
   font-weight: 700;
@@ -88,8 +88,10 @@ address {
 }
 
 .contacts {
+  display: flex;
   margin-left: auto;
   color: #212121;
+  gap: 40px;
 }
 
 .contacts-footer {
@@ -115,12 +117,12 @@ address {
   color: #fff;
 }
 
-.features-list {
-  display: flex;
-}
 .section-hero {
+  margin-top: 32px;
+  padding: 200px;
   background-color: #2f303a;
   text-align: center;
+  width: auto;
 }
 
 .hero-title {
@@ -144,13 +146,6 @@ address {
   text-align: center;
   cursor: pointer;
 }
-.services-list {
-  display: flex;
-}
-
-.team-list {
-  display: flex;
-}
 
 .feature,
 .service,
@@ -158,9 +153,30 @@ address {
   list-style: none;
 }
 
-.feature {
-  display: inline-block;
+.section-features {
+  margin-top: 94px;
 }
+
+.features-list {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.feature-title {
+  margin-bottom: 10px;
+}
+
+.section-title {
+  margin: 94px;
+  text-align: center;
+}
+
+.services-list {
+  display: flex;
+  justify-content: space-around;
+}
+
 .footer {
   background-color: #212121;
 }
