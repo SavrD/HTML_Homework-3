@@ -35,6 +35,7 @@ address {
 .header-content {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
 }
 /* #endregion */
 
@@ -70,6 +71,7 @@ address {
 /* #endregion */
 
 .nav-list {
+  margin-top: 32px;
   display: flex;
   gap: 50px;
 }
@@ -88,6 +90,8 @@ address {
 }
 
 .contacts {
+  margin-top: 32px;
+  margin-bottom: 32px;
   display: flex;
   margin-left: auto;
   color: #212121;
@@ -118,7 +122,6 @@ address {
 }
 
 .section-hero {
-  margin-top: 32px;
   padding: 200px;
   background-color: #2f303a;
   text-align: center;
@@ -158,8 +161,9 @@ address {
 }
 
 .features-list {
+  margin: 215px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   gap: 30px;
 }
 
@@ -167,6 +171,11 @@ address {
   margin-bottom: 10px;
 }
 
+.feature-paragraph {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
 .section-title {
   margin: 94px;
   text-align: center;
@@ -175,6 +184,13 @@ address {
 .services-list {
   display: flex;
   justify-content: space-around;
+}
+
+.team-list {
+  margin-bottom: 94px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
 }
 
 .footer {
