@@ -163,7 +163,7 @@ address {
 .features-list {
   margin: 215px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 30px;
 }
 
@@ -174,8 +174,9 @@ address {
 .feature-paragraph {
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
+  justify-content: center;
 }
+
 .section-title {
   margin: 94px;
   text-align: center;
@@ -183,22 +184,27 @@ address {
 
 .services-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 30px;
 }
 
 .team-list {
   margin-bottom: 94px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: baseline;
   gap: 30px;
 }
 
 .footer {
   background-color: #212121;
+  height: 251px;
+  width: auto;
 }
 
 .contacts-list {
   display: flex;
+  flex-direction: column;
   list-style: none;
 }
 
@@ -229,4 +235,11 @@ address {
 .buttons-button:hover {
   color: #ffffff;
   background-color: #2294f1;
+}
+.logo-footer {
+  margin-left: 215px;
+  margin-top: 60px;
+}
+.contacts-item {
+  margin: 12px 215px;
 }
