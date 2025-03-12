@@ -35,12 +35,14 @@ address {
 .header-content {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  height: 80px;
 }
 /* #endregion */
 
 /* #region LOGO */
 .logo {
+  display: flex;
+  align-items: center;
   margin-right: 93px;
   font-family: "Raleway";
   font-size: 26px;
@@ -69,14 +71,20 @@ address {
 }
 
 /* #endregion */
-
+.nav {
+  display: flex;
+}
 .nav-list {
-  margin-top: 32px;
   display: flex;
   gap: 50px;
 }
 
+.nav-item {
+  display: flex;
+}
 .nav-link {
+  display: flex;
+  align-items: center;
   font-size: 14px;
   font-weight: 500;
 
@@ -90,9 +98,8 @@ address {
 }
 
 .contacts {
-  margin-top: 32px;
-  margin-bottom: 32px;
   display: flex;
+  align-items: center;
   margin-left: auto;
   color: #212121;
   gap: 40px;
@@ -122,13 +129,15 @@ address {
 }
 
 .section-hero {
-  padding: 200px;
+  padding: 200px 0;
   background-color: #2f303a;
   text-align: center;
   width: auto;
 }
 
 .hero-title {
+  margin: 0 auto 30px;
+  width: 696px;
   color: #ffffff;
   font-size: 44px;
   text-align: center;
