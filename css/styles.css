@@ -35,11 +35,13 @@ address {
 .header-content {
   display: flex;
   justify-content: space-between;
+
   height: 80px;
 }
 /* #endregion */
 
 /* #region LOGO */
+
 .logo {
   display: flex;
   align-items: center;
@@ -70,7 +72,13 @@ address {
   color: #fff;
 }
 
+.logo-footer {
+  padding: 60px 0 20px 215px;
+}
 /* #endregion */
+
+/* #region NAV */
+
 .nav {
   display: flex;
 }
@@ -82,6 +90,7 @@ address {
 .nav-item {
   display: flex;
 }
+
 .nav-link {
   display: flex;
   align-items: center;
@@ -92,41 +101,59 @@ address {
   transition: color 250ms;
 }
 
-.nav-link:focus,
 .nav-link:hover {
   color: #2294f1;
 }
+/* #endregion*/
+
+/* #region CONTACTS */
 
 .contacts {
   display: flex;
   align-items: center;
   margin-left: auto;
-  color: #212121;
+  color: #757575;
   gap: 40px;
 }
 
 .contacts-footer {
+  display: flex;
   color: #ffffff99;
+  margin: 12px 215px;
 }
 
 .contacts-link {
+  display: flex;
+  align-items: center;
   font-size: 14px;
   font-weight: 500;
-
+  height: 80px;
   transition: color 250ms;
 }
 
-.contacts-link:hover {
+.contacts-link:hover,
+.contact-link:hover,
+.contact-link-footer:hover {
   color: #2294f1;
 }
 
-.contacts-link-white {
+.contact-link-white {
   color: #fff;
+  padding: 9px;
 }
 
-.contacts-link-footer {
+.contact-link-footer {
+  display: flex;
+  padding: 9px;
   color: #fff;
+  flex-direction: column;
+  list-style: none;
+  color: #757575;
 }
+
+/* #endregion  */
+
+/* #region HERO */
 
 .section-hero {
   padding: 200px 0;
@@ -159,71 +186,9 @@ address {
   cursor: pointer;
 }
 
-.feature,
-.service,
-.person {
-  list-style: none;
-}
+/* #endregion */
 
-.section-features {
-  margin-top: 94px;
-}
-
-.features-list {
-  margin: 215px;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-}
-
-.feature-title {
-  margin-bottom: 10px;
-}
-
-.feature-paragraph {
-  display: flex;
-  align-items: baseline;
-  justify-content: center;
-}
-
-.section-title {
-  margin: 94px;
-  text-align: center;
-}
-
-.services-list {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-}
-
-.team-list {
-  margin-bottom: 94px;
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-  gap: 30px;
-}
-
-.footer {
-  background-color: #212121;
-  height: 251px;
-  width: auto;
-}
-
-.contacts-list {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-}
-
-.contacts-link:hover {
-  color: #2294f1;
-}
-
-.practices-item {
-  list-style: none;
-}
+/* #region BUTTON */
 .buttons-list {
   list-style: none;
 }
@@ -245,10 +210,101 @@ address {
   color: #ffffff;
   background-color: #2294f1;
 }
-.logo-footer {
-  margin-left: 215px;
-  margin-top: 60px;
+/* #endregion */
+
+.feature,
+.service,
+.person {
+  list-style: none;
 }
-.contacts-item {
-  margin: 12px 215px;
+
+/* #region FEATURES */
+.section-features {
+  padding-bottom: 0;
+}
+.features-item {
+  width: 270px;
+}
+
+.features-list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  list-style: none;
+}
+
+.feature-title {
+  margin: 0 0 10px;
+  display: flex;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 3%;
+  text-transform: uppercase;
+}
+
+.feature-paragraph {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 3%;
+  color: #757575;
+}
+
+/* #endregion */
+
+/* #region SERVICES */
+
+.section-title {
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.services-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+}
+
+/* #endregion */
+
+/* #region TEAM */
+section {
+  padding: 94px 0;
+}
+.section-team {
+  height: 648px;
+  padding: 50px 0;
+
+  background-color: #f5f4fa;
+}
+
+.team-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.person-name {
+  margin: 30px 0 10px;
+  text-align: center;
+  color: #212121;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 3%;
+}
+
+.person-role {
+  color: #757575;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 3%;
+}
+
+/* #endregion */
+
+.footer {
+  background-color: #2f303a;
+  height: 252px;
 }
