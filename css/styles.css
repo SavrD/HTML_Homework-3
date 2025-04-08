@@ -274,8 +274,7 @@ section {
   padding: 94px 0;
 }
 .section-team {
-  height: 648px;
-  padding: 50px 0;
+  padding: 94px 0;
 
   background-color: #f5f4fa;
 }
@@ -284,6 +283,18 @@ section {
   display: flex;
   justify-content: center;
   gap: 30px;
+}
+
+.team-item {
+ border-bottom-left-radius: 4px;
+ border-bottom-right-radius: 4px;
+
+  box-shadow: 0px 2px 1px 0px #00000033;
+
+  box-shadow: 0px 1px 1px 0px #00000024;
+
+  box-shadow: 0px 1px 3px 0px #0000001F;
+
 }
 
 .person-name {
@@ -296,6 +307,7 @@ section {
 }
 
 .person-role {
+  margin-bottom: 30px;
   color: #757575;
   text-align: center;
   font-size: 16px;
