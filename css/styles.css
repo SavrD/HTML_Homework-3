@@ -16,6 +16,10 @@ h3 {
   list-style: none;
 }
 
+section {
+  padding: 94px 0;
+}
+
 .feature,
 .service,
 .person {
@@ -35,11 +39,17 @@ address {
   margin: 0 auto;
   width: 1170px;
 }
-
+.section {
+  padding: 94px, 0;
+}
 /* #region HEADER */
 .header {
   border-color: #000;
 }
+.header-portfolio {
+  border: 1px solid #ececec;
+}
+
 .header-content {
   display: flex;
   justify-content: space-between;
@@ -216,10 +226,10 @@ address {
   color: #ffffff;
   background-color: #2294f1;
 }
-.buttons {
-  padding: 94px, 0, 34px;
-}
+
 .buttons-list {
+  padding-top: 94px;
+  padding-bottom: 50px;
   display: flex;
   gap: 8px;
   justify-content: center;
@@ -280,10 +290,6 @@ address {
 
 /* #region TEAM */
 
-section {
-  padding: 94px 0;
-}
-
 .section-team {
   padding: 94px;
 
@@ -326,10 +332,26 @@ section {
 
 /* #endregion */
 
-.practices-item {
+.section-practice {
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-bottom: 94px;
+}
+
+.practices-item {
+  border: 1px solid #eeeeee;
+}
+
+.practices-name {
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-bottom: 4px;
+}
+.practices-role {
+  padding-left: 24px;
+  padding-bottom: 20px;
 }
 
 .footer {
