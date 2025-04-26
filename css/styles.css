@@ -1,3 +1,5 @@
+/* #region GENERAL */
+
 html {
   scroll-behavior: smooth;
   font-family: "Roboto", sans-serif;
@@ -51,6 +53,9 @@ address {
 .section {
   padding: 94px, 0;
 }
+
+/* #endregion */
+
 /* #region HEADER */
 .header {
   border-color: #000;
@@ -85,6 +90,8 @@ address {
 
 .logo-footer {
   color: #fff;
+  padding-top: 60px;
+  padding-bottom: 28px;
 }
 
 .logo-blue {
@@ -218,8 +225,7 @@ address {
   background-color: #2294f1;
 }
 
-.buttons-list {
-  padding-top: 94px;
+.buttons {
   padding-bottom: 50px;
   display: flex;
   gap: 8px;
@@ -299,9 +305,6 @@ address {
   gap: 30px;
 }
 
-.container-person {
-  padding: 30px 0;
-}
 .team-item {
   margin: 0;
   border-bottom-left-radius: 4px;
@@ -312,6 +315,10 @@ address {
   box-shadow: 0px 1px 1px 0px #00000024;
 
   box-shadow: 0px 1px 3px 0px #0000001f;
+}
+
+.person-info {
+  padding: 30px 0;
 }
 
 .person-name {
@@ -334,40 +341,26 @@ address {
 
 /* #region PORTFOLIO */
 
-.container-portfolio {
-  margin: 0 auto;
-  width: 1170px;
-}
-.div-practice {
-  margin: 0 auto;
-  width: 1170px;
-}
-
-.section-practice {
+.projects {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  padding-bottom: 94px;
 }
 
-.practices-item {
+.projects-info {
   border: 1px solid #eeeeee;
-  width: 368px;
   box-sizing: border-box;
+  padding: 20px 24px;
 }
 
-.practices-name {
-  padding-top: 20px;
-  padding-left: 24px;
-  padding-bottom: 4px;
+.projects-name {
+  margin-bottom: 10px;
   font-size: 18px;
   font-weight: 700;
   line-height: 36px;
   letter-spacing: 1.08px;
 }
-.practices-role {
-  padding-left: 24px;
-  padding-bottom: 20px;
+.projects-role {
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.48px;
@@ -381,16 +374,6 @@ address {
 .footer {
   background-color: #2f303a;
   height: 252px;
-}
-
-.container-footer {
-  margin: 0 auto;
-  width: 1170px;
-}
-
-.logo-footer {
-  padding-top: 60px;
-  padding-bottom: 28px;
 }
 
 .contacts-footer {
