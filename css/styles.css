@@ -1,8 +1,16 @@
+@import './blocks/header.css';
+@import './blocks/container.css';
+
 /* #region GENERAL */
 
 html {
   scroll-behavior: smooth;
   font-family: "Roboto", sans-serif;
+
+  --transition-duration:  250ms;
+  --color-black: #212121;
+  --color-blue: #2294f1;
+  --color-gray: #757575;
 }
 
 * {
@@ -27,16 +35,6 @@ h3 {
   list-style: none;
 }
 
-section {
-  padding: 94px 0;
-}
-
-.feature,
-.service,
-.person {
-  list-style: none;
-}
-
 a {
   text-decoration: none;
   color: inherit;
@@ -46,38 +44,22 @@ address {
   font-style: normal;
 }
 
-.container {
-  margin: 0 auto;
-  width: 1170px;
-}
+
+
 .section {
-  padding: 94px, 0;
+  padding: 94px 0;
 }
 
 /* #endregion */
 
-/* #region HEADER */
-.header {
-  border-color: #000;
-}
-.header-portfolio {
-  border: 1px solid #ececec;
-}
 
-.header-content {
-  display: flex;
-  justify-content: space-between;
-
-  height: 80px;
-}
-/* #endregion */
 
 /* #region LOGO */
 
 .logo {
   display: flex;
   align-items: center;
-  margin-right: 93px;
+
   font-family: "Raleway";
   font-size: 26px;
   font-weight: 700;
@@ -85,17 +67,17 @@ address {
 }
 
 .logo-header {
+  margin-right: 93px;
   color: #000;
 }
 
 .logo-footer {
+  margin-bottom: 28px;
   color: #fff;
-  padding-top: 60px;
-  padding-bottom: 28px;
 }
 
 .logo-blue {
-  color: #2294f1;
+  color: var(--color-blue);
 }
 
 .logo-black {
@@ -113,6 +95,7 @@ address {
 .nav {
   display: flex;
 }
+
 .nav-list {
   display: flex;
   gap: 50px;
@@ -128,12 +111,12 @@ address {
   font-size: 14px;
   font-weight: 500;
 
-  color: #212121;
-  transition: color 250ms;
+  color: var(--color-black);
+  transition: color var(--transition-duration);
 }
 
 .nav-link:hover {
-  color: #2294f1;
+  color: var(--color-blue);
 }
 /* #endregion*/
 
@@ -143,8 +126,16 @@ address {
   display: flex;
   align-items: center;
   margin-left: auto;
-  color: #757575;
+  color: var(--color-gray);
   gap: 40px;
+}
+
+.contacts-footer {
+  flex-direction: column;
+  align-items: start;
+  gap: 12px;
+
+  color: #ffffff99;
 }
 
 .contacts-link {
@@ -153,16 +144,20 @@ address {
   font-size: 14px;
   font-weight: 500;
   height: 80px;
-  transition: color 250ms;
+  transition: color var(--transition-duration);
 }
 
-.contacts-link:hover,
-.contact-link:hover,
-.contact-link-footer:hover {
-  color: #2294f1;
+.contacts-link:hover {
+  color: var(--color-blue);
 }
 
-.contact-link-white {
+.contacts-link-footer {
+  height: unset;
+  color: var(--color-gray);
+}
+
+.contacts-link-address {
+  height: unset;
   color: #fff;
 }
 
@@ -195,7 +190,7 @@ address {
   font-weight: 700;
   line-height: 30px;
   color: #ffffff;
-  background-color: #2294f1;
+  background-color: var(--color-blue);
   border: none;
   border-radius: 4px;
   text-align: center;
@@ -206,7 +201,15 @@ address {
 
 /* #region BUTTON */
 
-.buttons-button {
+.buttons {
+  margin-bottom: 50px;
+
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.button {
   cursor: pointer;
   padding: 6px 22px;
 
@@ -217,21 +220,18 @@ address {
 
   border: none;
   border-radius: 4px;
+
+  transition: all var(--transition-duration);
 }
 
-.buttons-button:focus,
-.buttons-button:hover {
+.button-active,
+.button:focus,
+.button:hover {
   color: #ffffff;
-  background-color: #2294f1;
+  background-color: var(--color-blue);
 }
 
-.buttons {
-  padding-bottom: 50px;
-  display: flex;
-  gap: 8px;
-  justify-content: center;
-  list-style: none;
-}
+
 /* #endregion */
 
 /* #region FEATURES */
@@ -266,7 +266,7 @@ address {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 3%;
-  color: #757575;
+  color: var(--color-gray);
 }
 
 /* #endregion */
@@ -324,14 +324,14 @@ address {
 .person-name {
   margin-bottom: 10px;
   text-align: center;
-  color: #212121;
+  color: var(--color-black);
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 3%;
 }
 
 .person-role {
-  color: #757575;
+  color: var(--color-gray);
   text-align: center;
   font-size: 16px;
   letter-spacing: 3%;
@@ -364,7 +364,7 @@ address {
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.48px;
-  color: #757575;
+  color: var(--color-gray);
 }
 
 /* #endregion */
@@ -372,23 +372,11 @@ address {
 /* #region FOOTER */
 
 .footer {
+  padding: 60px 0;
   background-color: #2f303a;
-  height: 252px;
+
 }
 
-.contacts-footer {
-  display: flex;
-  color: #ffffff99;
-}
-.contact-footer {
-  margin: 12px 0;
-}
 
-.contact-link-footer {
-  color: #fff;
-  flex-direction: column;
-  list-style: none;
-  color: #757575;
-}
 
 /* #endregion */
